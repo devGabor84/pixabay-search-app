@@ -5,6 +5,18 @@
     <input type="text" id="name" class="form-control" />
     <button class="btn btn-success" type="submit">Search</button>
   </div>
+  <div class="row">
+    <a href="#" *ngFor="let item of items">
+      <img
+        src="{{ item.src }}"
+        alt=""
+        class="responsive-img"
+        style="max-height: 100px;"
+      />
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+    </a>
+  </div>
   <app-search-page-item></app-search-page-item>
   <app-search-page-item-detailes></app-search-page-item-detailes>
 </div>

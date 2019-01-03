@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Item } from "../item.model";
+import { ItemService } from "../item.service";
 
 @Component({
   selector: "app-search-page-item",
@@ -8,7 +9,11 @@ import { Item } from "../item.model";
 })
 export class SearchPageItemComponent implements OnInit {
   @Input() item: Item;
-  constructor() {}
+  constructor(private itemService: ItemService) {}
 
   ngOnInit() {}
+
+  onSelected() {
+    this.itemService.itemSelected.emit(this.item);
+  }
 }

@@ -9,10 +9,14 @@ import { ItemService } from "./item.service";
   providers: [ItemService]
 })
 export class SearchPageComponent implements OnInit {
+  selectedItem: Item;
   items: Item[];
   constructor(private itemService: ItemService) {}
 
   ngOnInit() {
     this.items = this.itemService.getItems();
+    this.itemService.itemSelected.subscribe((item: Item) => {
+      this.selectedItem = item;
+    });
   }
 }

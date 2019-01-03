@@ -1,9 +1,15 @@
 <div class="row">
-  <div class="col-xs-12"><img src="" alt="" class="img-responsive" /></div>
+  <div class="col-xs-12">
+    <img src="{{ this.selectedItem.src }}" alt="" class="img-responsive" />
+  </div>
 </div>
 <div class="row">
-  <div class="col-xs-12"><h1>Title</h1></div>
+  <div class="col-xs-12">
+    <h1>{{ this.selectedItem.title }}</h1>
+  </div>
 </div>
 <div class="row">
-  <div class="col-xs-12"><p>Description</p></div>
+  <div class="col-xs-12">
+    <p>{{ this.selectedItem.description }}</p>
+  </div>
 </div>

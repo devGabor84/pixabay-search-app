@@ -12,5 +12,8 @@
     ></app-search-page-item>
   </div>
 
-  <app-search-page-item-detailes></app-search-page-item-detailes>
+  <app-search-page-item-detailes
+    *ngIf="selectedItem"
+    [selectedItem]="selectedItem"
+  ></app-search-page-item-detailes>
 </div>

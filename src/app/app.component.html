@@ -1,5 +1,4 @@
 <div class="container">
-  <app-menu (selectedPage)="changePage($event)"></app-menu>
-  <app-search-page *ngIf="page === 'search'"></app-search-page>
-  <app-saved-page *ngIf="page === 'saved'"></app-saved-page>
+  <app-menu></app-menu>
+  <router-outlet></router-outlet>
 </div>

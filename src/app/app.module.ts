@@ -12,8 +12,12 @@ import { SavedPageItemComponent } from "./saved-page/saved-page-item/saved-page-
 import { SavedPageItemDetailsComponent } from "./saved-page/saved-page-item-details/saved-page-item-details.component";
 
 const appRoutes: Routes = [
-  { path: "", component: SearchPageComponent },
-  { path: "saved", component: SavedPageComponent }
+  {
+    path: "",
+    component: SearchPageComponent
+  },
+  { path: "saved", component: SavedPageComponent },
+  { path: "details/:id", component: SearchPageItemDetailesComponent }
 ];
 
 @NgModule({

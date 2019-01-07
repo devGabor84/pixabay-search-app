@@ -7,13 +7,9 @@
   </div>
   <div class="row">
     <app-search-page-item
-      *ngFor="let item of items"
+      *ngFor="let item of items; let i = index"
       [item]="item"
+      [id]="i"
     ></app-search-page-item>
   </div>
-
-  <app-search-page-item-detailes
-    *ngIf="selectedItem"
-    [selectedItem]="selectedItem"
-  ></app-search-page-item-detailes>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Item } from "../item.model";
 import { ItemService } from "../item.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-search-page-item",
@@ -9,11 +10,13 @@ import { ItemService } from "../item.service";
 })
 export class SearchPageItemComponent implements OnInit {
   @Input() item: Item;
-  constructor(private itemService: ItemService) {}
+  @Input() id: number;
+
+  constructor(private itemService: ItemService, private router: Router) {}
 
   ngOnInit() {}
 
   onSelected() {
-    this.itemService.itemSelected.emit(this.item);
+   this.router.navigate(['/details', this.id])
   }
 }

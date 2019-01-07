@@ -23,5 +23,9 @@ export class ItemService {
     return this.items;
   }
 
+  getItem(id: number) {
+    return this.items[id];
+  }
+
   constructor() {}
 }

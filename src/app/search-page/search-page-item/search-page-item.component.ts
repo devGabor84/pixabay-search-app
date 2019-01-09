@@ -9,7 +9,7 @@ import { Router } from "@angular/router";
   styleUrls: ["./search-page-item.component.css"]
 })
 export class SearchPageItemComponent implements OnInit {
-  @Input() item: Item;
+  @Input() item: any;
   @Input() id: number;
 
   constructor(private itemService: ItemService, private router: Router) {}
@@ -17,6 +17,6 @@ export class SearchPageItemComponent implements OnInit {
   ngOnInit() {}
 
   onSelected() {
-   this.router.navigate(['/details', this.id])
+    this.router.navigate(["/details", this.id]);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { Item } from "../item.model";
 import { ActivatedRoute, Params } from "@angular/router";
 import { ItemService } from "../item.service";
@@ -9,7 +9,7 @@ import { ItemService } from "../item.service";
   styleUrls: ["./search-page-item-detailes.component.css"]
 })
 export class SearchPageItemDetailesComponent implements OnInit {
-  selectedItem: Item;
+  selectedItem: any;
   id: number;
 
   constructor(

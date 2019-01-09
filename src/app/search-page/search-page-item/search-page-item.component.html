@@ -1,12 +1,12 @@
 <div class="col-lg-3">
-  <a (click)="onSelected()">
+  <a routerLink="/details/{{ this.id }}">
     <img
-      src="{{ item.src }}"
+      src="{{ item.previewURL }}"
       alt=""
       class="responsive-img"
       style="max-height: 100px;"
     />
-    <h3>{{ item.title }}</h3>
-    <p>{{ item.description }}</p>
+    <h3>{{ item.type }}</h3>
+    <p>{{ item.tags }}</p>
   </a>
 </div>

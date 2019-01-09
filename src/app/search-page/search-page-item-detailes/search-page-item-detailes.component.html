@@ -1,15 +1,21 @@
-<div class="row" *ngIf="selectedItem">
-  <div class="col-xs-8">
-    <img src="{{ this.selectedItem.src }}" alt="" class="img-responsive" />
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8">
+      <img
+        src="{{ this.selectedItem.largeImageURL }}"
+        alt=""
+        class="img-responsive"
+      />
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-xs-8">
-    <h1>{{ this.selectedItem.title }}</h1>
+  <div class="row">
+    <div class="col-xs-8">
+      <h1>{{ this.selectedItem.type }}</h1>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-xs-8">
-    <p>{{ this.selectedItem.description }}</p>
+  <div class="row">
+    <div class="col-xs-8">
+      <p>{{ this.selectedItem.tags }}</p>
+    </div>
   </div>
 </div>

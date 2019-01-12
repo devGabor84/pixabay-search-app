@@ -31,7 +31,7 @@ export class ItemService {
       .get("https://pixabay.com/api/?key=" + this.apiKey + "&q=" + query)
       .subscribe((res: any) => {
         this.items = res.hits;
-        console.log(this.items[1]);
+        console.log(this.items);
         this.itemsChanged.emit(this.items);
       });
   }

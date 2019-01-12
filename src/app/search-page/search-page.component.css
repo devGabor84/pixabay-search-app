@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-flow: column;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
+}
+
+input {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-basis: 3rem;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.btn {
+  width: 10rem;
+  cursor: pointer;
+  border-radius: 5px;
+}

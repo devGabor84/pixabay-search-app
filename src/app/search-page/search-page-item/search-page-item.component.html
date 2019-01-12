@@ -1,11 +1,6 @@
-<div class="col-lg-3">
+<div class="col">
   <a routerLink="/details/{{ this.id }}">
-    <img
-      src="{{ item.previewURL }}"
-      alt=""
-      class="responsive-img"
-      style="max-height: 100px;"
-    />
+    <img src="{{ item.previewURL }}" alt="" class="responsive-img" />
     <h3>{{ item.type }}</h3>
     <p>{{ item.tags }}</p>
   </a>

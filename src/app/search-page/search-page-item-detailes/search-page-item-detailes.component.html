@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="this.selectedItem">
   <div class="row">
     <div class="col-xs-8">
       <img
@@ -8,14 +8,10 @@
       />
     </div>
   </div>
+
   <div class="row">
     <div class="col-xs-8">
-      <h1>{{ this.selectedItem.type }}</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-8">
-      <p>{{ this.selectedItem.tags }}</p>
+      <p>Tags: {{ this.selectedItem.tags }}</p>
     </div>
   </div>
 </div>

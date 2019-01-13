@@ -20,7 +20,11 @@ export class SearchPageItemDetailesComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {
       this.id = +params["id"];
-      this.selectedItem = this.itemService.getItem(this.id);
+      if (this.itemService.items){
+        this.selectedItem = this.itemService.getItem(this.id);
+
+      }
+      
     });
   }
 }

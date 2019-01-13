@@ -7,10 +7,5 @@ import { Component } from "@angular/core";
   providers: []
 })
 export class AppComponent {
-  title = "nasaApp";
-  page = "search";
-
-  changePage(page: string) {
-    this.page = page;
-  }
+  title = "Pixabay seach app";
 }

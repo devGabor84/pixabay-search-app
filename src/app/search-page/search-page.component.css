@@ -6,31 +6,35 @@ h1 {
   color: #fff;
 }
 
-.row {
-  display: flex;
-  flex-flow: column;
-}
-
-.form-group {
-  display: flex;
-  flex-flow: column;
-}
-
 input {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  flex-basis: 3rem;
-  border-radius: 5px;
+  height: 3rem;
+  border-radius: 100px;
+  border: none;
+  padding-left: 1rem;
 }
 
 label {
-  font-size: 1.5rem;
   color: #fff;
+}
+
+.form-group {
+  font-size: 1.5rem;
 }
 
 .btn {
   width: 10rem;
+  height: 3rem;
   cursor: pointer;
-  border-radius: 5px;
+  border: none;
+  border-radius: 100px;
+}
+
+.row {
+  background-image: linear-gradient(#6441a5, #2a0845);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
 }

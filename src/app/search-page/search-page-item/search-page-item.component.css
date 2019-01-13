@@ -1,16 +1,18 @@
 .col {
   width: 30rem;
   height: 30rem;
-  background-color: gray;
+  background-color: #fff;
   padding: 2rem;
 }
 
 a {
-  display: flex;
-  flex-flow: column;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
 }
 
 img {
   width: 100%;
   height: auto;
+  max-height: 80%;
 }

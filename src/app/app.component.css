@@ -6,3 +6,16 @@
   display: flex;
   flex-flow: column;
 }
+
+@media only screen and (max-width: 28em) {
+  .container {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container {
+    max-width: 100%;
+  }
+}

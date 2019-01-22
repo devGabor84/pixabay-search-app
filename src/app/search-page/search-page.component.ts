@@ -10,6 +10,7 @@ import { ItemService } from "./item.service";
   styleUrls: ["./search-page.component.css"]
 })
 export class SearchPageComponent implements OnInit {
+  public query: string;
   constructor(private router: Router, private itemService: ItemService) {}
 
   ngOnInit() {}

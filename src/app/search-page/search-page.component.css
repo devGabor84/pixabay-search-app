@@ -30,11 +30,11 @@ label {
   cursor: pointer;
   border: none;
   border-radius: 100px;
+  background-color: #ff4e08;
 }
 
 .row {
-  background-image: linear-gradient(#6441a5, #2a0845);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #222222;
+
   padding: 2rem;
 }

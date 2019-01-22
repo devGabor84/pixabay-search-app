@@ -10,7 +10,7 @@ import "rxjs/Rx";
 })
 export class ItemService {
   itemsChanged = new EventEmitter<any>();
-  apiKey: string = environment.apiKey;
+  private apiKey: string = environment.apiKey;
 
   public items: any;
   /* Item[] = [

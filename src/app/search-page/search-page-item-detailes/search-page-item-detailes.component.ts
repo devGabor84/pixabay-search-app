@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { Item } from "../item.model";
 import { ActivatedRoute, Params } from "@angular/router";
 import { ItemService } from "../item.service";
 
@@ -20,11 +19,9 @@ export class SearchPageItemDetailesComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {
       this.id = +params["id"];
-      if (this.itemService.items){
+      if (this.itemService.items) {
         this.selectedItem = this.itemService.getItem(this.id);
-
       }
-      
     });
   }
 }

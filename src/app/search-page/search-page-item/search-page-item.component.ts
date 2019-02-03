@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { Item } from "../item.model";
-import { ItemService } from "../item.service";
 import { Router } from "@angular/router";
 
 @Component({
@@ -12,7 +10,7 @@ export class SearchPageItemComponent implements OnInit {
   @Input() item: any;
   @Input() id: number;
 
-  constructor(private itemService: ItemService, private router: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 

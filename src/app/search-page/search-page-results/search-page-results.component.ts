@@ -7,7 +7,7 @@ import { ItemService } from "../item.service";
   styleUrls: ["./search-page-results.component.css"]
 })
 export class SearchPageResultsComponent implements OnInit {
-  items: /*Item[];*/ any;
+  items: any;
   constructor(private itemService: ItemService) {}
 
   ngOnInit() {
